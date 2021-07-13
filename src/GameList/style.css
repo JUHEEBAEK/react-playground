@@ -1,0 +1,58 @@
+.list-container {
+    border: solid 1px white;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.list-item {
+    margin: 4px;
+    padding: 4px;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.list-item:hover {
+    background-color: rgb(63, 63, 63);
+    border-radius: 16px;
+}
+
+.text-initial {
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+    padding: 12px;
+}
+
+.text-answer {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.list-button {
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    background-color: tomato;
+    color:wheat;
+    cursor: pointer;
+}
+.list-button:hover {
+    background-color: crimson;
+}
+
+.button-text {
+    font-size: 10px;
+    font-weight: 800;
+}
