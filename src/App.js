@@ -61,6 +61,22 @@ function App() {
     console.log(games);
   };
 
+  const onSelect = (id) => {
+    const { initial, answer } = games.filter(game => game.id === id)[0];
+
+    setInputs({
+      initial: initial,
+      answer: answer
+    });
+  };
+
+  const onClear = () => {
+    setInputs({
+      initial: "",
+      answer: ""
+    });
+  };
+
   const onRemove = (id) => {
     setGames(games.filter(game => game.id !== id));
   };
