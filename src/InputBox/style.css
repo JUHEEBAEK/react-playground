@@ -1,0 +1,30 @@
+.input-container {
+    display: flex;
+    padding: 12px;
+    margin: 8px;
+    border: solid 1px white;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.input-box {
+    padding: 4px;
+    margin: 0 4px;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.button-save {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #546f1e;
+    border-radius: 12px;
+    border: solid 1px #546f1e;
+    color: white;
+    height: 24px;
+    cursor: pointer;
+}
+
