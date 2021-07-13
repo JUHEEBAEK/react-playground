@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function Game({game, onRemove}) {
-    const { initial, answer, id } = game; 
+function Game({game, onSelect, onRemove}) {
+    const { initial, answer, id } = game;
     return (
-        <div className="list-item">
+        <div className="list-item" onClick={() => onSelect(id)}>
             <div>
                 <b className="text-initial">{initial}</b><span className="text-answer">{answer}</span>
             </div>
@@ -13,12 +13,12 @@ function Game({game, onRemove}) {
     )
 }
 
-function GameList({ games, onRemove }) {
+function GameList({ games, onSelect, onRemove }) {
     return (
         <div className="list-container">
             {
                 games.map(game => (
-                    <Game game={game} key={game.id} onRemove={onRemove} />
+                    <Game game={game} key={game.id} onSelect={onSelect} onRemove={onRemove} />
                 ))
             }
         </div>
