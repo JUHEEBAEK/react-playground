@@ -61,6 +61,10 @@ function App() {
     console.log(games);
   };
 
+  const onRemove = (id) => {
+    setGames(games.filter(game => game.id !== id));
+  };
+
   return (
     <div className="App">
       <header className="App-header">
