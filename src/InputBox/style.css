@@ -15,7 +15,7 @@
     border-radius: 12px;
 }
 
-.button-save {
+.button-default {
     padding: 12px;
     display: flex;
     justify-content: center;
@@ -26,5 +26,17 @@
     color: white;
     height: 24px;
     cursor: pointer;
+    margin: 0 4px;
+}
+
+.button-save {
+    background-color: #0c71ff;
+    border: solid 1px #0c71ff;
+}
+
+.button-clear {
+    background-color: #ffcf0d;
+    border: solid 1px #ffcf0d;
+    color: black;
 }
 

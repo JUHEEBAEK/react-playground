@@ -87,8 +87,8 @@ function App() {
         <span> 초성게임의 초성과 답을 적어 문제를 생성해주세요. </span>
       </header>
       <main>
-        <InputBox initial={initial} answer={answer} onChange={onChange} onCreate={onCreate} />
-        <GameList games={games} onRemove={onRemove} />
+        <InputBox initial={initial} answer={answer} onChange={onChange} onCreate={onCreate} onClear={onClear} />
+        <GameList games={games} onSelect={onSelect} onRemove={onRemove} />
       </main>
     </div>
   );
